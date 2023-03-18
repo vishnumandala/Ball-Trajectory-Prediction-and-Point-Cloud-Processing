@@ -1,65 +1,67 @@
-# PROJECT 1
-## ENPM673 - Perception for Autonomous Robots
+PROJECT 1
+ENPM673 - Perception for Autonomous Robots
 
-## Dependencies
-1. python 3.11 (any version above 3 should work)
-2. Python running IDE (I used VS Code)
+Dependencies
+python 3.11 (any version above 3 should work)
+Python running IDE (I used VS Code)
 
-## Libraries
-1. OpenCV
-2. NumPy
-3. Matplotlib
+Libraries
+OpenCV
+NumPy
+Matplotlib
 
-## Contents
-1. ball.mov
-2. pc1.csv
-3. pc2.csv
-4. problem1.py
-5. problem2.py
-6. Report.pdf
-7. README.md
-8. problem1_output.png
-9. problem2_output.png
+Contents
+ball.mov
+pc1.csv
+pc2.csv
+problem1.py
+problem2.py
+Report.pdf
+README.md
+problem1_output.png
+problem2_output.png
 
-## Installation Instructions
+Installation Instructions
 1. Download the zip file and extract it
 2. Install python and the required dependencies: pip install opencv-python numpy matplotlib
 
-## Problem 1 - Ball Trajectory Prediction
+Problem 1 - Ball Trajectory Prediction
 This code analyzes the trajectory of a ball in a given video and predicts its landing spot using computer vision and curve fitting techniques.
 
-### Features
+Features
 1. Extracts the coordinates of the center of the ball from a given video file
 2. Fits a parabolic curve to the extracted coordinates using the standard least squares method
 3. Predicts the x-coordinate of the ball's landing spot based on the fitted curve
 4. Displays the trajectory of the ball with the predicted landing spot in a scatter plot
 
-### Usage
+Usage
 1. Place the video file in the same directory as the code file
 2. Set the filename of the video in the cv2.VideoCapture() function call in line 5 of the code
 3. Run the code: problem1.py
 
-### Example Output
+Example Output
 
 Equation of the parabolic trajectory of the ball: y = 0.000589700381382697x^2 + -0.5977806132188792x + 455.14988106710655
 Possible landing spots: x = 1372.9428397397155, -359.2405731458969
 The x-coordinate of the ball's landing spot is (As the other point is out of frame): 1372.9428397397155
 The ball lands at (1372.9428397397155,746)
 
-## Problem 2 - Point Clouds Processing
+-------------------------------------------------------------------------------------------------------------------------------
+
+Problem 2 - Point Clouds Processing
 This code for processing point clouds using the NumPy and Matplotlib libraries. 
 
-### Features
+Features
 1. Computes the covariance matrix for a given point cloud
 2. Computes the surface normal and magnitude of a flat, ground plane in a point cloud
 3. Fits a plane to a given set of points using Standard Least Squares, Total Least Squares, and RANSAC methods
 
-### Usage
+Usage
 1. Place the data files in the same directory as the code file
 2. Set the filenames in the np.loadtxt function call in lines 5 and 6 of the code
 3. Run the code: problem2.py
 
-### Example Output
+Example Output
 
 Covariance Matrix for pc1.csv:
  [[ 33.7500586   -0.82513692 -11.39434956]
