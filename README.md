@@ -46,6 +46,9 @@ Possible landing spots: x = 1372.9428397397155, -359.2405731458969
 The x-coordinate of the ball's landing spot is (As the other point is out of frame): 1372.9428397397155
 The ball lands at (1372.9428397397155,746)
 
+## Output
+![Ball Trajectory](https://github.com/vishnumandala/Ball-Trajectory-Prediction-and-Point-Cloud-Processing/blob/main/problem1_output.png)
+
 ## Problem 2 - Point Clouds Processing
 This code for processing point clouds using the NumPy and Matplotlib libraries. 
 
@@ -70,3 +73,6 @@ Surface Normal to the flat, ground plane ----- Vector: [0.28616428 0.53971234 0.
 Coefficients for Standard Least Squares :  [-0.2997447  -0.67026719  3.44546813]
 Coefficients for Total Least Squares :  [ 0.25336279  0.56455808  0.78554533 -2.70518836]
 Coefficients for RANSAC :  [ 0.25336279  0.56455808  0.78554533 -2.70518836 22.53942768]
+
+## Output
+![Point Clouds Processing](https://github.com/vishnumandala/Ball-Trajectory-Prediction-and-Point-Cloud-Processing/blob/main/problem2_output.png)
